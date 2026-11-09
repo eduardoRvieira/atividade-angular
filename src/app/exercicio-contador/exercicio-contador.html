@@ -1,1 +1,11 @@
-<p>exercicio-contador works!</p>
+<div class="contador-container">
+  <h2>Exercício 6 - Contador Dinâmico</h2>
+  
+  <p>Clique no número para resetar para 0:</p>
+  
+  <div class="display-contador" (click)="resetar()">
+    {{ contador }}
+  </div>
+
+  <button class="btn-incrementar" (click)="incrementar()">Incrementar</button>
+</div>

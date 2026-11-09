@@ -1,0 +1,42 @@
+.contador-container {
+  background-color: #ffffff;
+  border: 2px solid #0066aa;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.display-contador {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0066aa;
+  background-color: #cdefff;
+  border: 2px dashed #0066aa;
+  width: 100px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.display-contador:hover {
+  background-color: #b5e3ff;
+}
+
+.btn-incrementar {
+  background-color: #0066aa;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-incrementar:hover {
+  background-color: #004d80;
+}
