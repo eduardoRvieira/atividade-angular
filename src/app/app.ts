@@ -5,6 +5,7 @@ import { Cabecalho } from './cabecalho/cabecalho';
 import { Menu } from './menu/menu';
 import { Conteudo } from './conteudo/conteudo';
 import { Rodape } from './rodape/rodape';
+import { Introducao } from './introducao/introducao';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { Rodape } from './rodape/rodape';
     RouterOutlet,
     Menu,
     Conteudo,
+    Introducao,
     Rodape
   ],
   templateUrl: './app.html',
