@@ -1,1 +1,14 @@
-<p>exercicio-auth works!</p>
+<div class="auth-container">
+  <h2>Exercício 7 - Estado de Autenticação</h2>
+  
+  <p class="status-texto">
+    O usuário está 
+    <span [ngClass]="isLogado ? 'logado' : 'deslogado'">
+      {{ isLogado ? 'logado' : 'deslogado' }}
+    </span>
+  </p>
+
+  <button class="btn-auth" (click)="alternarLogin()">
+    {{ isLogado ? 'Deslogar' : 'Logar' }}
+  </button>
+</div>

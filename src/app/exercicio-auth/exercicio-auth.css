@@ -1,0 +1,40 @@
+.auth-container {
+  background-color: #ffffff;
+  border: 2px solid #0066aa;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.status-texto {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.logado {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.deslogado {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.btn-auth {
+  background-color: #0066aa;
+  color: #ffffff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-auth:hover {
+  background-color: #004d80;
+}
