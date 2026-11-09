@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  background-color: #0066aa; /* Tom de azul escuro */
+  color: #ffffff; /* Texto branco */
+  border: 3px solid #ff0000; /* Borda vermelha */
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  margin: 5px 0;
+}

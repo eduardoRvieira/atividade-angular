@@ -1,12 +1,25 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { Cabecalho } from './cabecalho/cabecalho';
+import { Menu } from './menu/menu';
+import { Conteudo } from './conteudo/conteudo';
+import { Rodape } from './rodape/rodape';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  standalone: true,
+  imports: [
+    CommonModule,
+    Cabecalho,
+    RouterOutlet,
+    Menu,
+    Conteudo,
+    Rodape
+  ],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('atividade-angular');
+  title = 'atividade-angular';
 }
