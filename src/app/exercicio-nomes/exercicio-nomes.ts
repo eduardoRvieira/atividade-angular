@@ -1,9 +1,23 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms'; 
 
 @Component({
-  imports: [],
   selector: 'app-exercicio-nomes',
-  styleUrl: './exercicio-nomes.css',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './exercicio-nomes.html',
+  styleUrl: './exercicio-nomes.css'
 })
-export class ExercicioNomes {}
+export class ExercicioNomes {
+  nomeInput: string = '';
+
+  listaNomes: string[] = [];
+
+  adicionarNome() {
+    if (this.nomeInput.trim() !== '') {
+      this.listaNomes.push(this.nomeInput.trim()); 
+      this.nomeInput = ''; 
+    }
+  }
+}

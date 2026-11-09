@@ -1,1 +1,25 @@
-<p>exercicio-nomes works!</p>
+<div class="nomes-container">
+  <h2>Exercício 9 - Cadastro de Nomes</h2>
+  
+  <div class="form-grupo">
+    <input 
+      type="text" 
+      [(ngModel)]="nomeInput" 
+      placeholder="Digite um nome..." 
+      (keyup.enter)="adicionarNome()"
+    />
+    <button (click)="adicionarNome()">Cadastrar</button>
+  </div>
+
+  <div class="lista-area">
+    <h3>Nomes Cadastrados:</h3>
+    
+    <p class="vazio" *ngIf="listaNomes.length === 0">Nenhum nome cadastrado ainda.</p>
+
+    <ul *ngIf="listaNomes.length > 0">
+      <li *ngFor="let nome of listaNomes; let i = index">
+        <span>{{ i + 1 }}. {{ nome }}</span>
+      </li>
+    </ul>
+  </div>
+</div>

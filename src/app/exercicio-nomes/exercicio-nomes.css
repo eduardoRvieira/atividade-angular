@@ -1,0 +1,68 @@
+.nomes-container {
+  background-color: #ffffff;
+  border: 2px solid #0066aa;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.form-grupo {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-grupo input {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #0066aa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-grupo button {
+  background-color: #0066aa;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-grupo button:hover {
+  background-color: #004d80;
+}
+
+.lista-area {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #cdefff;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #0066aa;
+}
+
+.lista-area ul {
+  padding-left: 20px;
+}
+
+.lista-area li {
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #003355;
+}
+
+.vazio {
+  color: #555;
+  font-style: italic;
+  text-align: center;
+}
