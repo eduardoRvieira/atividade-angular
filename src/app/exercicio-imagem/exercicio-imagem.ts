@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  imports: [],
   selector: 'app-exercicio-imagem',
-  styleUrl: './exercicio-imagem.css',
+  standalone: true,
+  imports: [CommonModule, FormsModule], 
   templateUrl: './exercicio-imagem.html',
+  styleUrl: './exercicio-imagem.css'
 })
-export class ExercicioImagem {}
+export class ExercicioImagem {
+  urlImagem: string = '';
+}

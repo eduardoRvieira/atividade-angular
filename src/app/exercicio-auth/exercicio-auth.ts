@@ -9,10 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './exercicio-auth.css'
 })
 export class ExercicioAuth {
-  // Estado inicial do usuário (deslogado por padrão)
   isLogado: boolean = false;
 
-  // Função para alternar entre logar e deslogar
   alternarLogin() {
     this.isLogado = !this.isLogado;
   }

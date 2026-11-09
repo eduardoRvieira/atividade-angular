@@ -1,1 +1,18 @@
-<p>exercicio-imagem works!</p>
+<div class="imagem-container">
+  <h2>Exercício 8 - Visualizador de Imagem Dinâmica</h2>
+  
+  <div class="input-grupo">
+    <label for="urlInput">Digite a URL da imagem:</label>
+    <input 
+      id="urlInput" 
+      type="text" 
+      [(ngModel)]="urlImagem" 
+      placeholder="Cole o link da imagem aqui (ex: https://...)" 
+    />
+  </div>
+
+  <div class="preview-area" *ngIf="urlImagem">
+    <p>Resultado:</p>
+    <img [src]="urlImagem" alt="Imagem Dinâmica" (error)="urlImagem = ''" />
+  </div>
+</div>

@@ -1,0 +1,38 @@
+.imagem-container {
+  background-color: #ffffff;
+  border: 2px solid #0066aa;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.input-grupo {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.input-grupo input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #0066aa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.preview-area {
+  margin-top: 20px;
+}
+
+.preview-area img {
+  max-width: 100%;
+  max-height: 300px;
+  border: 2px dashed #0066aa;
+  border-radius: 6px;
+  padding: 5px;
+  background-color: #cdefff;
+}
