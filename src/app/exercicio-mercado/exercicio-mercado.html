@@ -1,1 +1,27 @@
-<p>exercicio-mercado works!</p>
+<div class="mercado-container">
+  <h2>Exercício 5 - Interface Mercado</h2>
+
+  <div class="card-mercado">
+    <h3>{{ unidadeDeBlumenau.nomeMercado }}</h3>
+    <p><strong>Maçãs vendidas por ano:</strong> {{ unidadeDeBlumenau.macasVendidasAno }}</p>
+    <p><strong>Preço da maçã:</strong> R$ {{ unidadeDeBlumenau.precoMaca | number:'1.2-2' }}</p>
+    <p><strong>Laranjas vendidas por ano:</strong> {{ unidadeDeBlumenau.laranjasVendidasAno }}</p>
+    <p><strong>Preço da laranja:</strong> R$ {{ unidadeDeBlumenau.precoLaranja | number:'1.2-2' }}</p>
+  </div>
+
+  <div class="card-mercado">
+    <h3>{{ unidadeDeJoinville.nomeMercado }}</h3>
+    <p><strong>Maçãs vendidas por ano:</strong> {{ unidadeDeJoinville.macasVendidasAno }}</p>
+    <p><strong>Preço da maçã:</strong> R$ {{ unidadeDeJoinville.precoMaca | number:'1.2-2' }}</p>
+    <p><strong>Laranjas vendidas por ano:</strong> {{ unidadeDeJoinville.laranjasVendidasAno }}</p>
+    <p><strong>Preço da laranja:</strong> R$ {{ unidadeDeJoinville.precoLaranja | number:'1.2-2' }}</p>
+  </div>
+
+  <div class="card-mercado">
+    <h3>{{ unidadeDeFlorianopolis.nomeMercado }}</h3>
+    <p><strong>Maçãs vendidas por ano:</strong> {{ unidadeDeFlorianopolis.macasVendidasAno }}</p>
+    <p><strong>Preço da maçã:</strong> R$ {{ unidadeDeFlorianopolis.precoMaca | number:'1.2-2' }}</p>
+    <p><strong>Laranjas vendidas por ano:</strong> {{ unidadeDeFlorianopolis.laranjasVendidasAno }}</p>
+    <p><strong>Preço da laranja:</strong> R$ {{ unidadeDeFlorianopolis.precoLaranja | number:'1.2-2' }}</p>
+  </div>
+</div>
